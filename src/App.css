@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /** 
+  *  Colors
+  */
+  --btnAdd-color: #c1cfc0;
+  --list-Color: #ffdfaf;
+  --btnRemove-color: #df2e2e;
+  --btnEdit-color: #289672;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+.form-control {
+  margin: 50px;
+  display: flex;
+  border: 1px solid lightgray;
+  width: 540px;
+  border-radius: 0 15px 15px 0;
+}
+
+.from-control__input {
+  padding: 10px;
+  width: 500px;
+  outline: unset;
+  border: unset;
+}
+
+.btn-add {
+  border-radius: 0 15px 15px 0;
+  padding: 12.4px;
+  outline: none;
+  border: unset;
+  width: 50px;
+  background: var(--btnAdd-color);
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.btn-add:hover {
+  width: 100px;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn-remove {
+  padding: 10px;
+  border: unset;
+  font-size: 1rem;
+  height: 40px;
+  width: 35px;
+  color: var(--btnRemove-color);
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  background: currentColor;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+.btn-remove:hover {
+  width: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.btn-edit {
+  padding: 10px;
+  border: unset;
+  /* background: red; */
+  font-size: 1rem;
+  height: 40px;
+  width: 60px;
+  color: var(--btnEdit-color);
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  background: currentColor;
+  transition: all 0.2s ease-in-out;
+}
+.btn-edit:hover {
+  width: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+ul > li {
+  list-style: none;
+  /* padding: 20px; */
+  border-radius: 10px;
+  background: var(--list-Color);
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul > li span {
+  display: block;
+  padding-left: 20px;
+}
